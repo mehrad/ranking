@@ -2,14 +2,14 @@
 lock "~> 3.11.1"
 
 set :application, "ranking"
-set :repo_url, "git@example.com:me/ranking.git"
+set :repo_url, "https://github.com/mehrad/ranking.git"
 
 set :deploy_to, '/home/deploy/ranking'
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "https://github.com/mehrad/ranking.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
