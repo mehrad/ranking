@@ -43,11 +43,18 @@ namespace :deploy do
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
+	
+      
+      #desc "Recreate symlink"
+      #task :resymlink, :roles => :app do
+      #  run "rm -f #{current_path} && ln -s #{release_path} #{current_path}"
+      #end
+# Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
     end
   end
+#after "deploy:create_symlink", "deploy:resymlink", "deploy:update_crontab"
 
 end
