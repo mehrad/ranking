@@ -3,9 +3,15 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
+<<<<<<< HEAD
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+=======
+# server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
+# server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
+# server 'db.example.com', user: 'deploy', roles: %w{db}
+>>>>>>> bf70aa179ff67c9af643be03f323d8828e055ce2
 
 
 
@@ -13,7 +19,11 @@
 # ==================
 
 # Defines a role with one or multiple servers. The primary server in each
+<<<<<<< HEAD
 # group is considered to be the first unless any hosts have the primary
+=======
+# group is considered to be the first unless any  hosts have the primary
+>>>>>>> bf70aa179ff67c9af643be03f323d8828e055ce2
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
@@ -49,6 +59,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
+<<<<<<< HEAD
 # server "example.com",
 #   user: "user_name",
 #   roles: %w{web app},
@@ -62,3 +73,16 @@
 
 
 server '198.143.178.132', user: 'deploy', roles: %w{app db web}
+=======
+# server 'example.com',
+#   user: 'user_name',
+#   roles: %w{web app},
+#   ssh_options: {
+#     user: 'user_name', # overrides user setting above
+#     keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password)
+#     # password: 'please use keys'
+#   }
+ server '198.143.178.132', user: 'deploy', roles: %w{app db web}
+>>>>>>> bf70aa179ff67c9af643be03f323d8828e055ce2

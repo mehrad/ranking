@@ -4,6 +4,7 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 
+<<<<<<< HEAD
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
@@ -15,6 +16,8 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
+=======
+>>>>>>> bf70aa179ff67c9af643be03f323d8828e055ce2
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
@@ -26,6 +29,7 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
+<<<<<<< HEAD
 # require "capistrano/rvm"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
@@ -39,5 +43,21 @@ require 'capistrano/passenger'
 require 'capistrano/rbenv'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.3'
+=======
+# require 'capistrano/rvm'
+# require 'capistrano/rbenv'
+# require 'capistrano/chruby'
+# require 'capistrano/bundler'
+# require 'capistrano/rails/assets'
+# require 'capistrano/rails/migrations'
+# require 'capistrano/passenger'
+
+require 'capistrano/rails'
+require 'capistrano/passenger'
+require 'capistrano/rbenv'
+set :rbenv_type, :user
+set :rbenv_ruby, '2.6.3'
+
+>>>>>>> bf70aa179ff67c9af643be03f323d8828e055ce2
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
