@@ -23,16 +23,17 @@ default: &default
 
 development:
   <<: *default
-  database: ranking_development
+  database: ranking
+  host: 127.0.0.1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: ranking
+  username: deploy
 
   # The password associated with the postgres role (username).
-  #password:
+  password: 1
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -80,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: ranking_production
-  username: ranking
+  database: ranking
+  username: deploy
   password: <%= ENV['RANKING_DATABASE_PASSWORD'] %>
+
