@@ -1,0 +1,60 @@
+/* line 1, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+.wall {
+  width: 50px;
+  height: 50px;
+  background-image: url(/assets/wall-5fb275b8c49d78410c2128c3dc9a3771e9174530891dd35fe7340716a35f68f8.png);
+  display: inline-block;
+}
+
+/* line 9, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+.coin {
+  width: 50px;
+  height: 50px;
+  background-image: url("coin.png");
+  display: inline-block;
+}
+
+/* line 15, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+.ground {
+  width: 50px;
+  height: 50px;
+  background-image: url("bg.png");
+  display: inline-block;
+}
+
+/* line 21, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+.ghost {
+  width: 50px;
+  height: 50px;
+  background-image: url("ghost1.png");
+  display: inline-block;
+}
+
+/* line 27, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+.pacman {
+  width: 50px;
+  height: 50px;
+  background-image: url("pacman.png");
+  display: inline-block;
+}
+
+/* line 34, /Users/m3hrad/Projects/ruby-rank/ranking/app/assets/stylesheets/home.scss */
+div {
+  line-height: 0px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
